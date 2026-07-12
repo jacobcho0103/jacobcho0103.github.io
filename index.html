@@ -59,6 +59,7 @@
   .nav{display:flex;gap:1.2rem;flex-wrap:wrap;}
   .nav a{color:#000;font-weight:600;font-size:.92rem;padding:.4rem 0;}
   .nav a:hover{color:var(--link);text-decoration:none;}
+  .nav a.active{color:var(--link);border-bottom:2px solid var(--link);}
 
   /* ---------- Page layout ---------- */
   .page{
@@ -129,7 +130,7 @@
     <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
     <!-- EDIT: navigation links -->
     <nav class="nav" id="nav">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="talks.html">Talks</a>
