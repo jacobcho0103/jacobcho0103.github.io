@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — UT Austin</title>
+
+<!-- ============================================================
+     HOW TO EDIT THIS PAGE
+     - Text content is between the tags in the <body> below.
+       Look for the comments like <!-- EDIT: ... --  > to find sections.
+     - Replace "Your Name", the bio paragraphs, links, and lists.
+     - To change your photo: replace the profile.jpg reference in the
+       <img> tag inside the sidebar (put an image next to this file).
+     - Navigation links at the top point to other pages (research.html,
+       publications.html, etc.). Create those files the same way, or
+       change the hrefs to sections on this page.
+     ============================================================ -->
+
+<style>
+  :root{
+    --link:#2a7ae2;
+    --link-hover:#1756a9;
+    --text:#3f3f3f;
+    --heading:#000;
+    --muted:#7a8288;
+    --border:#f2f3f3;
+    --sidebar-name:#000;
+    --masthead-border:#f2f3f3;
+    --max-width:1200px;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-head:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--text);
+    font-size:16px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);text-decoration:none;}
+  a:hover{color:var(--link-hover);text-decoration:underline;}
+
+  /* ---------- Top masthead / nav ---------- */
+  .masthead{
+    border-bottom:1px solid var(--masthead-border);
+    position:sticky;top:0;background:#fff;z-index:20;
+  }
+  .masthead__inner{
+    max-width:var(--max-width);margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 1.25rem;min-height:60px;
+  }
+  .site-title{font-weight:700;color:var(--heading);font-size:1.1rem;}
+  .site-title:hover{text-decoration:none;}
+  .nav-toggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;}
+  .nav{display:flex;gap:1.2rem;flex-wrap:wrap;}
+  .nav a{color:#000;font-weight:600;font-size:.92rem;padding:.4rem 0;}
+  .nav a:hover{color:var(--link);text-decoration:none;}
+
+  /* ---------- Page layout ---------- */
+  .page{
+    max-width:var(--max-width);margin:2rem auto;padding:0 1.25rem;
+    display:grid;grid-template-columns:280px 1fr;gap:2.5rem;
+  }
+
+  /* ---------- Sidebar author profile ---------- */
+  .author{position:sticky;top:90px;align-self:start;}
+  .author__avatar img{
+    width:200px;height:200px;object-fit:cover;border-radius:50%;
+    display:block;margin:0 auto 1rem;background:#eee;
+  }
+  .author__name{font-size:1.3rem;font-weight:700;color:var(--sidebar-name);text-align:center;margin:.2rem 0;}
+  .author__bio{font-size:.9rem;color:var(--text);text-align:center;margin:0 0 1rem;}
+  .author__links{list-style:none;margin:0;padding:0;font-size:.9rem;}
+  .author__links li{padding:.35rem 0;border-top:1px solid var(--border);display:flex;align-items:center;gap:.55rem;}
+  .author__links li:first-child{border-top:0;}
+  .author__links .icon{width:1.1rem;text-align:center;color:var(--muted);}
+
+  /* ---------- Main content ---------- */
+  .content h1{font-size:2rem;color:var(--heading);margin:.2rem 0 1.2rem;font-weight:700;}
+  .content h2{
+    font-size:1.4rem;color:var(--heading);font-weight:700;
+    margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--border);
+  }
+  .content h3{font-size:1.15rem;color:var(--heading);margin:1.4rem 0 .5rem;}
+  .content p{margin:0 0 1.1rem;}
+  .content ul{padding-left:1.3rem;margin:0 0 1.1rem;}
+  .content li{margin-bottom:.6rem;}
+  .content img.inline{max-width:100%;border-radius:6px;margin:1rem 0;}
+  .btn{
+    display:inline-block;background:var(--link);color:#fff;font-weight:600;
+    padding:.55rem 1.1rem;border-radius:5px;margin:.3rem 0 1.2rem;font-size:.95rem;
+  }
+  .btn:hover{background:var(--link-hover);color:#fff;text-decoration:none;}
+  hr{border:0;border-top:1px solid var(--border);margin:2rem 0;}
+
+  /* ---------- Footer ---------- */
+  .site-footer{
+    border-top:1px solid var(--masthead-border);margin-top:3rem;
+    padding:1.5rem 1.25rem;font-size:.85rem;color:var(--muted);
+  }
+  .site-footer__inner{max-width:var(--max-width);margin:0 auto;}
+  .site-footer a{color:var(--muted);}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:820px){
+    .page{grid-template-columns:1fr;gap:1.5rem;}
+    .author{position:static;}
+    .nav{
+      display:none;flex-direction:column;gap:.2rem;width:100%;
+      padding:.5rem 0;
+    }
+    .nav.open{display:flex;}
+    .masthead__inner{flex-wrap:wrap;}
+    .nav-toggle{display:block;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP NAVIGATION ============ -->
+<header class="masthead">
+  <div class="masthead__inner">
+    <!-- EDIT: site title (shown top-left) -->
+    <a class="site-title" href="index.html">Your Name / UT Austin</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <!-- EDIT: navigation links -->
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="awards.html">Awards</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- ============ SIDEBAR PROFILE ============ -->
+  <aside class="author">
+    <!-- EDIT: profile photo. Put profile.jpg next to this file. -->
+    <div class="author__avatar">
+      <img src="profile.jpg" alt="Your Name"
+           onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
+    </div>
+    <!-- EDIT: name + short tagline -->
+    <div class="author__name">Your Name</div>
+    <p class="author__bio">Ph.D. Candidate. Brief one-line description of your research focus.</p>
+
+    <!-- EDIT: contact + link list -->
+    <ul class="author__links">
+      <li><span class="icon">📍</span> Austin, TX</li>
+      <li><span class="icon">🏛️</span> The University of Texas at Austin</li>
+      <li><span class="icon">✉️</span> <a href="mailto:you@utexas.edu">Email</a></li>
+      <li><span class="icon">🎓</span> <a href="https://scholar.google.com/">Google Scholar</a></li>
+      <li><span class="icon">💻</span> <a href="https://github.com/">GitHub</a></li>
+      <li><span class="icon">in</span> <a href="https://www.linkedin.com/">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="content">
+    <!-- EDIT: main heading -->
+    <h1>Your Name</h1>
+
+    <!-- EDIT: intro paragraphs -->
+    <p>I am <strong>Your Name</strong>, a Ph.D. candidate in <strong>[Your Department]</strong> at <strong>The University of Texas at Austin</strong>, advised by <a href="#">Prof. Advisor Name</a>.</p>
+
+    <p>My research develops <strong>[your core methods/themes]</strong> for <strong>[your application area]</strong>. I am especially interested in [one or two sentences about what motivates your work and the kinds of problems you tackle].</p>
+
+    <p>Before UT Austin, I [prior degrees / positions and where]. I earned my [degree] from [institution], where I worked with <a href="#">Prof. Name</a>.</p>
+
+    <p>Outside of research, I enjoy [hobbies].</p>
+
+    <!-- EDIT: optional call-to-action button; delete if not needed -->
+    <a class="btn" href="research.html">See my research</a>
+
+    <hr>
+
+    <!-- EDIT: Education section -->
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Ph.D. Candidate</strong>, [Department], The University of Texas at Austin, [Start]–[Expected]<br>Advisor: <a href="#">Prof. Advisor Name</a></li>
+      <li><strong>M.S.</strong>, [Field], [University], [Years]</li>
+      <li><strong>B.S.</strong>, [Field], [University], [Years]</li>
+    </ul>
+
+    <!-- EDIT: Research interests -->
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Research direction one</li>
+      <li>Research direction two</li>
+      <li>Research direction three</li>
+      <li>Research direction four</li>
+    </ul>
+
+    <!-- EDIT: News / Media (delete section if unused) -->
+    <h2>News</h2>
+    <ul>
+      <li><strong>[Month Year]</strong> — Short news item, e.g. paper accepted, award, talk.</li>
+      <li><strong>[Month Year]</strong> — Another update.</li>
+    </ul>
+
+    <!-- EDIT: Contact -->
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:you@utexas.edu">you@utexas.edu</a></li>
+      <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+    </ul>
+  </main>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <!-- EDIT: footer text -->
+    &copy; <span id="year"></span> Your Name. Hosted on GitHub Pages.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
