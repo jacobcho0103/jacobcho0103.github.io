@@ -46,8 +46,11 @@
 
   .content h1{font-size:2rem;color:var(--heading);margin:.2rem 0 1.2rem;font-weight:700;}
   .content h2{font-size:1.4rem;color:var(--heading);font-weight:700;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--border);}
-  .research-theme{margin-top:1.6rem;}
-  .research-theme h2{margin-bottom:.75rem;}
+  .research-theme{margin-top:1.4rem;}
+  .research-theme h3{margin:1.05rem 0 .65rem;}
+  .research-topics{margin:.65rem 0 1.25rem;padding-left:1.35rem;}
+  .research-topics li{margin-bottom:.95rem;}
+  .research-section-divider{border:0;border-top:1px solid #dce6ee;margin:2.7rem 0 1.6rem;}
   .content h3{font-size:1.15rem;color:var(--heading);margin:1.4rem 0 .3rem;}
   .content p{margin:0 0 1.1rem;}
   .content ul{padding-left:1.3rem;margin:0 0 1.1rem;}
@@ -118,26 +121,38 @@
   </aside>
   <main class="content">
     <h1>Research</h1>
-    <p>My research develops <strong>optimization-aware AI models</strong> for power-system operation and planning. Building on this methodological foundation, I investigate the grid integration of AI infrastructure, including datacenter flexibility, energy–water impacts, and resilience-aware investment.</p>
+    <p>I develop AI-based models that represent complex physical and operational relationships in forms suitable for power-system optimization. Building on this foundation, my future research will focus on grid-coordinated AI datacenter operation, energy–water planning, and resilience-aware grid investment.</p>
+
+    <h2>Current Research</h2>
+    <section class="research-theme">
+      <h3>Optimization-Aware AI Modeling for Power Systems</h3>
+      <p>I use neural networks to approximate selected nonlinear grid relationships, optimization subproblems, and market responses. The learned components are embedded into the original optimization formulations while retaining the remaining physical and operating constraints.</p>
+      <ul class="research-topics">
+        <li><strong>Topology optimization and service restoration.</strong> I develop neural piecewise-linear power-flow models that approximate nonlinear grid relationships while preserving known network structure and branch-node consistency. Their mixed-integer formulations support transmission switching, distribution reconfiguration, and restoration without retraining for each network topology.</li>
+        <li><strong>Adversarial contingency analysis.</strong> I approximate the operator's optimal load-shedding value function to formulate adversarial grid contingency analysis as a single-level problem, avoiding repeated lower-level optimization during worst-case contingency search.</li>
+        <li><strong>Electricity-market participation and computing flexibility.</strong> I investigate neural market-response models for price-making datacenter participation under incomplete market information. Control-oriented datacenter models also link GPU operating settings and inference workloads to power demand and computing-performance requirements.</li>
+        <li><strong>Carbon-aware power-system operation.</strong> I develop locational carbon metrics and neural representations that characterize how changes in electricity demand affect system emissions through grid dispatch, providing signals for carbon-aware demand management.</li>
+      </ul>
+      <p>I also develop reusable research resources, including <a href="/software/pglib-co2/">PGLib-CO2</a> for carbon-aware grid studies and a <a href="/software/datacenter/">control-oriented AI datacenter dataset</a> based on measured computing responses.</p>
+    </section>
+
+    <hr class="research-section-divider">
+    <h2>Future Research Directions</h2>
+    <p>I plan to extend these modeling methods toward the operation, environmental impacts, and infrastructure needs of growing AI datacenter demand.</p>
 
     <section class="research-theme">
-      <h2>Optimization-Aware AI Modeling for Power Systems</h2>
-      <p>I develop neural representations of complex grid physics and operational responses that can be embedded into optimization models while retaining the remaining operating constraints. My work applies this approach to topology optimization, adversarial contingency analysis, market participation, and carbon-aware demand management.</p>
+      <h3>Grid-Coordinated Datacenter Operation and Flexibility</h3>
+      <p>I plan to coordinate geographically distributed datacenters through grid-aware optimization. Building on my work on facility-level computing controls and market participation, I will investigate joint workload allocation, local computing controls, and market decisions under network constraints and computing-performance requirements. This direction will examine when coordination across facilities can relieve localized congestion and provide additional flexibility beyond adjustments within a single datacenter.</p>
     </section>
 
     <section class="research-theme">
-      <h2>Grid-Coordinated Datacenter Operation and Flexibility</h2>
-      <p>My ongoing research characterizes the power and computing-performance responses of AI inference workloads to GPU controls. I plan to extend facility-level flexibility through coordinated workload allocation, computing controls, and electricity-market participation under grid constraints and computing-performance requirements.</p>
+      <h3>Grid-Aware Energy–Water Planning for AI Infrastructure</h3>
+      <p>I plan to integrate datacenter siting and cooling decisions with dispatch-aware representations of power-sector water consumption and carbon emissions. By combining facility-level cooling models with generator-level resource characteristics, this direction will examine the direct water requirements of datacenters and the indirect environmental impacts of their electricity demand under grid and water-availability constraints.</p>
     </section>
 
     <section class="research-theme">
-      <h2>Grid-Aware Energy–Water Planning for AI Infrastructure</h2>
-      <p>I plan to study the combined effects of datacenter siting and cooling decisions on facility-level water use and grid-side environmental impacts. This direction will integrate cooling models with dispatch-aware representations of generation-related water consumption and carbon emissions.</p>
-    </section>
-
-    <section class="research-theme">
-      <h2>Resilience-Aware Grid Expansion and Investment</h2>
-      <p>I plan to evaluate network reinforcement decisions under normal operating conditions and credible disruption scenarios. Building on my topology optimization and contingency-analysis research, this direction will examine how resilience considerations affect investment choices for growing AI datacenter demand.</p>
+      <h3>Resilience-Aware Grid Expansion and Investment</h3>
+      <p>I plan to evaluate network reinforcement decisions under normal operating conditions and credible disruption scenarios, including potential cyber-physical risks. Building on my topology optimization and adversarial contingency research, this direction will investigate how resilience requirements affect grid investment priorities and cost–resilience tradeoffs as AI datacenter demand grows.</p>
     </section>
   </main>
 </div>
