@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Awards — Your Name</title>
-<!-- Clean-URL build: this file lives in its own folder as index.html.
-     All links/assets are root-relative (start with "/"). Edit content between the <!-- EDIT -->
+<title>Awards | Young-ho Cho</title>
 <style>
   :root{
     --link:#2a7ae2;
@@ -48,6 +46,8 @@
 
   .content h1{font-size:2rem;color:var(--heading);margin:.2rem 0 1.2rem;font-weight:700;}
   .content h2{font-size:1.4rem;color:var(--heading);font-weight:700;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--border);}
+  .content h2.selected-publications-heading{border-bottom:0;padding-bottom:0;margin-top:2.3rem;color:#4a4f52;}
+  .selected-publications li{margin-bottom:.65rem;}
   .content h3{font-size:1.15rem;color:var(--heading);margin:1.4rem 0 .3rem;}
   .content p{margin:0 0 1.1rem;}
   .content ul{padding-left:1.3rem;margin:0 0 1.1rem;}
@@ -83,13 +83,14 @@
 <body>
 <header class="masthead">
   <div class="masthead__inner">
-    <a class="site-title" href="/">Your Name / UT Austin</a>
+    <a class="site-title" href="/">Young-ho Cho / UT Austin</a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
     <nav class="nav" id="nav" aria-label="Primary navigation">
       <a href="/">Home</a>
       <a href="/publications/">Publications</a>
       <a href="/talks/">Talks</a>
       <a href="/teaching/">Teaching</a>
+      <a href="/awards/" class="active" aria-current="page">Awards</a>
     </nav>
   </div>
 </header>
@@ -98,45 +99,40 @@
   <aside class="author">
     <!-- EDIT: profile photo. Put profile.jpg at the REPO ROOT (next to the top index.html). -->
     <div class="author__avatar">
-      <img src="/profile.jpg" alt="Your Name" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
+      <img src="/profile.jpg" alt="Young-ho Cho" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
     </div>
     <!-- EDIT: name + short tagline -->
-    <div class="author__name">Your Name</div>
-    <p class="author__bio">Ph.D. Candidate. Brief one-line description of your research focus.</p>
+    <div class="author__name">Young-ho Cho</div>
+    <p class="author__bio">Ph.D. Candidate. Optimization-Aware AI Modeling for Power Systems.</p>
     <!-- EDIT: contact + link list -->
     <ul class="author__links">
       <li><span class="icon">&#128205;</span> Austin, TX</li>
       <li><span class="icon">&#127963;</span> The University of Texas at Austin</li>
-      <li><span class="icon">&#9993;</span> <a href="mailto:you@utexas.edu">Email</a></li>
-      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/">Google Scholar</a></li>
-      <li><span class="icon">&#128187;</span> <a href="https://github.com/">GitHub</a></li>
-      <li><span class="icon">in</span> <a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><span class="icon">&#9993;</span> <a href="mailto:jacobcho@utexas.edu">Email</a></li>
+      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/citations?hl=en&user=7Ai5gccAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></li>
+      <li><span class="icon">&#128187;</span> <a href="https://github.com/jacobcho0103">GitHub</a></li>
+      <li><span class="icon">in</span> <a href="https://www.linkedin.com/in/young-ho-cho-31673a237/">LinkedIn</a></li>
     </ul>
   </aside>
   <main class="content">
-    <h1>Awards &amp; Honors</h1>
-
-    <h2>Fellowships &amp; Scholarships</h2>
-    <ul>
-      <li><strong>[Award name]</strong>, Awarding body, Year</li>
-      <li><strong>[Award name]</strong>, Awarding body, Year</li>
-    </ul>
-
-    <h2>Paper &amp; Presentation Awards</h2>
-    <ul>
-      <li><strong>[Best Paper Award]</strong>, Conference, Year</li>
-    </ul>
-
-    <h2>Travel &amp; Other Awards</h2>
-    <ul>
-      <li><strong>[Award name]</strong>, Organization, Year</li>
+    <h1>Awards</h1>
+    <h2 class="selected-publications-heading">Awards and Honors</h2>
+    <ul class="selected-publications">
+      <li><strong>Temple Foundation Graduate Fellowship</strong>, 2026.</li>
+      <li><strong>Best Paper Runner-Up</strong>, ACM e-Energy, 2026.</li>
+      <li><strong>Professional Development Award</strong>, UT Graduate School, 2026.</li>
+      <li><strong>Professional Development Award</strong>, UT Graduate School, 2023.</li>
+      <li><strong>Best Reviewer</strong>, Journal of Electrical Engineering &amp; Technology (SCIE), 2021.</li>
+      <li><strong>3rd Place</strong>, FUZZ-IEEE Competition on Explainable Energy Prediction, IEEE CIS, 2021.</li>
+      <li><strong>7th Place</strong>, IEEE Day-Ahead Electricity Demand Forecasting: POST-COVID Paradigm, IEEE PES, 2021.</li>
+      <li><strong>Best Paper Award</strong>, KIEE, Korea, 2021.</li>
     </ul>
   </main>
 </div>
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    &copy; <span id="year"></span> Your Name. Hosted on GitHub Pages.
+    &copy; <span id="year"></span> Young-ho Cho. Hosted on GitHub Pages.
   </div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
