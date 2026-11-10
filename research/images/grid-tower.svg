@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="240" viewBox="0 0 160 240" role="img" aria-labelledby="title">
+<title id="title">Lattice transmission tower</title>
+<g fill="none" stroke="#293c4d" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M80 10 L116 56 L150 82 V98 M80 10 L44 56 L10 82 V98"/>
+<path d="M10 84 H150 M44 56 H116 M44 56 V170 M116 56 V170"/>
+<path d="M44 56 L116 106 M116 56 L44 106 M44 106 H116"/>
+<path d="M10 153 L44 128 H116 L150 153 V170 M10 153 V170 M10 153 H150"/>
+<path d="M44 128 L116 168 M116 128 L44 168 M44 168 H116"/>
+<path d="M44 168 L10 233 M116 168 L150 233 M44 168 L150 233 M116 168 L10 233"/>
+</g></svg>

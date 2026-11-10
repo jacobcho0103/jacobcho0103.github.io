@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="136" viewBox="0 0 220 136" role="img" aria-labelledby="title">
+<title id="title">Electrical substation with power transformers and switchgear</title>
+<g stroke-linejoin="round" stroke-linecap="round">
+<path d="M10 117 H210 M14 105 V117 M206 105 V117" stroke="#527d9f" stroke-width="3" fill="none"/>
+<path d="M16 102 H204 M16 116 H204 M16 102 V116 M204 102 V116" stroke="#8faec5" stroke-width="2" fill="none"/>
+<rect x="34" y="59" width="67" height="42" rx="4" fill="#d1e5f4" stroke="#507b9d" stroke-width="3"/>
+<rect x="118" y="59" width="66" height="42" rx="4" fill="#d1e5f4" stroke="#507b9d" stroke-width="3"/>
+<path d="M45 65 V95 M55 65 V95 M65 65 V95 M75 65 V95 M85 65 V95 M130 65 V95 M140 65 V95 M150 65 V95 M160 65 V95 M170 65 V95" stroke="#8baec9" stroke-width="2"/>
+<path d="M52 59 V37 M66 59 V37 M80 59 V37 M135 59 V37 M150 59 V37 M165 59 V37" stroke="#537b9a" stroke-width="2.5"/>
+<path d="M48 44 H56 M62 44 H70 M76 44 H84 M131 44 H139 M146 44 H154 M161 44 H169" stroke="#507b9d" stroke-width="4"/>
+<path d="M21 20 V45 M199 20 V45 M21 21 H199" stroke="#6389a7" stroke-width="3" fill="none"/>
+<circle cx="21" cy="21" r="3" fill="#4e87b7"/><circle cx="199" cy="21" r="3" fill="#4e87b7"/>
+<path d="M109 25 V60 M104 29 H114 M104 38 H114 M104 47 H114" stroke="#6389a7" stroke-width="2.5"/>
+<rect x="94" y="90" width="32" height="12" rx="2" fill="#89b2cf" stroke="#537d9f" stroke-width="2"/>
+</g></svg>
