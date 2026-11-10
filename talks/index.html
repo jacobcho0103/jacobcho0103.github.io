@@ -17,6 +17,7 @@
     --max-width:1200px;
     --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   }
+  html{overflow-y:scroll;scrollbar-gutter:stable;}
   *{box-sizing:border-box;}
   body{margin:0;font-family:var(--font-body);color:var(--text);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
   a{color:var(--link);text-decoration:none;}
@@ -32,7 +33,7 @@
   .nav a:hover{color:var(--link);text-decoration:none;}
   .nav a.active{color:var(--link);border-bottom:2px solid var(--link);}
 
-  .page{max-width:var(--max-width);margin:2rem auto;padding:0 1.25rem;display:grid;grid-template-columns:280px 1fr;gap:2.5rem;}
+  .page{max-width:var(--max-width);margin:2rem auto;padding:0 1.25rem;display:grid;grid-template-columns:280px minmax(0,1fr);gap:2.5rem;}
 
   .author{position:sticky;top:90px;align-self:start;}
   .author__avatar img{width:200px;height:200px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 1rem;background:#eee;}
@@ -84,10 +85,10 @@
   <div class="masthead__inner">
     <a class="site-title" href="/">Young-ho Cho / UT Austin</a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Primary navigation">
       <a href="/">Home</a>
       <a href="/publications/">Publications</a>
-      <a href="/talks/" class="active">Talks</a>
+      <a href="/talks/" class="active" aria-current="page">Talks</a>
       <a href="/teaching/">Teaching</a>
     </nav>
   </div>
@@ -114,7 +115,7 @@
   </aside>
   <main class="content">
     <h1>Talks</h1>
-    <h2 class="selected-publications-heading">&#128196; Conference Publications &amp; Presentations</h2>
+    <h2 class="selected-publications-heading">Talks and Presentations</h2>
     <ul class="selected-publications">
       <li><strong>Y. Cho</strong>, M. Ko, and H. Zhu. <em>PGLib-CO2: A Power Grid Library for Real-Time Computation and Optimization of Carbon Emissions.</em> <strong>ACM e-Energy</strong>, 2026.</li>
       <li><strong>Y. Cho*</strong>, M. Chehade*, F. Al-Janahi*, S. Lim*, J. Mohammadi, and H. Zhu. <em>Carbon-aware Market Participation for Building Energy Management Systems.</em> <strong>IEEE Power &amp; Energy Society General Meeting (PESGM)</strong>, 2026.</li>
