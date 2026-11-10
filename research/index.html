@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — Your Name</title>
-<!-- Clean-URL build: this file lives in its own folder as index.html.
-     All links/assets are root-relative (start with "/"). Edit content between the <!-- EDIT -->
+<title>Research | Young-ho Cho</title>
 <style>
   :root{
     --link:#2a7ae2;
@@ -48,6 +46,11 @@
 
   .content h1{font-size:2rem;color:var(--heading);margin:.2rem 0 1.2rem;font-weight:700;}
   .content h2{font-size:1.4rem;color:var(--heading);font-weight:700;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--border);}
+  .research-theme{margin-top:1.6rem;}
+  .research-theme h2{margin-bottom:.75rem;}
+  .research-note{font-size:.86rem;color:var(--muted);}
+  .research-figure{margin:1.1rem 0 2rem;max-width:780px;}
+  .research-figure img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid #e3e9ef;background:#f7fafd;}
   .content h3{font-size:1.15rem;color:var(--heading);margin:1.4rem 0 .3rem;}
   .content p{margin:0 0 1.1rem;}
   .content ul{padding-left:1.3rem;margin:0 0 1.1rem;}
@@ -83,10 +86,11 @@
 <body>
 <header class="masthead">
   <div class="masthead__inner">
-    <a class="site-title" href="/">Your Name / UT Austin</a>
+    <a class="site-title" href="/">Young-ho Cho / UT Austin</a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
     <nav class="nav" id="nav" aria-label="Primary navigation">
       <a href="/">Home</a>
+      <a href="/research/" class="active" aria-current="page">Research</a>
       <a href="/publications/">Publications</a>
       <a href="/talks/">Talks</a>
       <a href="/teaching/">Teaching</a>
@@ -99,52 +103,55 @@
   <aside class="author">
     <!-- EDIT: profile photo. Put profile.jpg at the REPO ROOT (next to the top index.html). -->
     <div class="author__avatar">
-      <img src="/profile.jpg" alt="Your Name" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
+      <img src="/profile.jpg" alt="Young-ho Cho" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
     </div>
     <!-- EDIT: name + short tagline -->
-    <div class="author__name">Your Name</div>
-    <p class="author__bio">Ph.D. Candidate. Brief one-line description of your research focus.</p>
+    <div class="author__name">Young-ho Cho</div>
+    <p class="author__bio">Ph.D. Candidate. Optimization-Aware AI Modeling for Power Systems.</p>
     <!-- EDIT: contact + link list -->
     <ul class="author__links">
       <li><span class="icon">&#128205;</span> Austin, TX</li>
       <li><span class="icon">&#127963;</span> The University of Texas at Austin</li>
-      <li><span class="icon">&#9993;</span> <a href="mailto:you@utexas.edu">Email</a></li>
-      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/">Google Scholar</a></li>
-      <li><span class="icon">&#128187;</span> <a href="https://github.com/">GitHub</a></li>
-      <li><span class="icon">in</span> <a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><span class="icon">&#9993;</span> <a href="mailto:jacobcho@utexas.edu">Email</a></li>
+      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/citations?hl=en&user=7Ai5gccAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></li>
+      <li><span class="icon">&#128187;</span> <a href="https://github.com/jacobcho0103">GitHub</a></li>
+      <li><span class="icon">in</span> <a href="https://www.linkedin.com/in/young-ho-cho-31673a237/">LinkedIn</a></li>
     </ul>
   </aside>
   <main class="content">
     <h1>Research</h1>
-    <p>My research develops <strong>[core methods]</strong> for <strong>[application area]</strong>. Below are my main research directions and representative projects.</p>
+    <p>My research develops <strong>optimization-aware AI models</strong> for power-system operation and planning. Building on this methodological foundation, I investigate the grid integration of AI infrastructure, including datacenter flexibility, energy–water impacts, and resilience-aware investment.</p>
+    <p class="research-note">The diagrams below are conceptual illustrations, not experimental results.</p>
 
-    <h2>Research Themes</h2>
+    <section class="research-theme">
+      <h2>Optimization-Aware AI Modeling for Power Systems</h2>
+      <p>I develop neural representations of complex grid physics and operational responses that can be embedded into optimization models while retaining the remaining operating constraints. My work applies this approach to topology optimization, adversarial contingency analysis, market participation, and carbon-aware demand management.</p>
+      <figure class="research-figure"><img src="/research/images/optimization-aware-ai.svg" alt="Conceptual flow from power-system relationships through neural representations to optimization decisions" loading="lazy" width="960" height="300"></figure>
+    </section>
 
-    <h3>Theme One: [Title]</h3>
-    <p>Describe this line of work in two or three sentences: the problem, your approach, and why it matters. Link to relevant papers on the <a href="/publications/">Publications</a> page.</p>
+    <section class="research-theme">
+      <h2>Grid-Coordinated Datacenter Operation and Flexibility</h2>
+      <p>My ongoing research characterizes the power and computing-performance responses of AI inference workloads to GPU controls. I plan to extend facility-level flexibility through coordinated workload allocation, computing controls, and electricity-market participation under grid constraints and computing-performance requirements.</p>
+      <figure class="research-figure"><img src="/research/images/datacenter-flexibility.svg" alt="Conceptual diagram linking AI workloads, coordinated datacenters, and the power grid" loading="lazy" width="960" height="300"></figure>
+    </section>
 
-    <h3>Theme Two: [Title]</h3>
-    <p>Describe the second theme here. You can add an image if helpful:</p>
-    <!-- EDIT: optional figure. Put figure1.jpg at the repo root, or delete this line. -->
-    <!-- <img class="inline" src="/figure1.jpg" alt="Project figure"> -->
+    <section class="research-theme">
+      <h2>Grid-Aware Energy–Water Planning for AI Infrastructure</h2>
+      <p>I plan to study the combined effects of datacenter siting and cooling decisions on facility-level water use and grid-side environmental impacts. This direction will integrate cooling models with dispatch-aware representations of generation-related water consumption and carbon emissions.</p>
+      <figure class="research-figure"><img src="/research/images/energy-water.svg" alt="Conceptual relationships among generation dispatch, datacenter electricity demand, and cooling water use" loading="lazy" width="960" height="300"></figure>
+    </section>
 
-    <h3>Theme Three: [Title]</h3>
-    <p>Describe the third theme here.</p>
-
-    <h2>Selected Projects</h2>
-    <ul>
-      <li><strong>[Project name]</strong> — one-line description, funding source or collaborators if relevant.</li>
-      <li><strong>[Project name]</strong> — one-line description.</li>
-    </ul>
-
-    <h2>Collaborators</h2>
-    <p>I have been fortunate to collaborate with <a href="#">Prof. Name</a>, <a href="#">Prof. Name</a>, and others on [topics].</p>
+    <section class="research-theme">
+      <h2>Resilience-Aware Grid Expansion and Investment</h2>
+      <p>I plan to evaluate network reinforcement decisions under normal operating conditions and credible disruption scenarios. Building on my topology optimization and contingency-analysis research, this direction will examine how resilience considerations affect investment choices for growing AI datacenter demand.</p>
+      <figure class="research-figure"><img src="/research/images/grid-resilience.svg" alt="Conceptual progression from an existing power network through disruption analysis to grid reinforcement" loading="lazy" width="960" height="300"></figure>
+    </section>
   </main>
 </div>
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    &copy; <span id="year"></span> Your Name. Hosted on GitHub Pages.
+    &copy; <span id="year"></span> Young-ho Cho. Hosted on GitHub Pages.
   </div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
