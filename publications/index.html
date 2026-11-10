@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Publications — Your Name</title>
-<!-- Clean-URL build: this file lives in its own folder as index.html.
-     All links/assets are root-relative (start with "/"). Edit content between the <!-- EDIT -->
+<title>Publications | Young-ho Cho</title>
 <style>
   :root{
     --link:#2a7ae2;
@@ -47,6 +45,8 @@
 
   .content h1{font-size:2rem;color:var(--heading);margin:.2rem 0 1.2rem;font-weight:700;}
   .content h2{font-size:1.4rem;color:var(--heading);font-weight:700;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--border);}
+  .content h2.selected-publications-heading{border-bottom:0;padding-bottom:0;margin-top:2.3rem;color:#4a4f52;}
+  .selected-publications li{margin-bottom:.65rem;}
   .content h3{font-size:1.15rem;color:var(--heading);margin:1.4rem 0 .3rem;}
   .content p{margin:0 0 1.1rem;}
   .content ul{padding-left:1.3rem;margin:0 0 1.1rem;}
@@ -82,15 +82,11 @@
 <body>
 <header class="masthead">
   <div class="masthead__inner">
-    <a class="site-title" href="/">Your Name / UT Austin</a>
+    <a class="site-title" href="/">Young-ho Cho / UT Austin</a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
     <nav class="nav" id="nav">
       <a href="/">Home</a>
-      <a href="/research/">Research</a>
       <a href="/publications/" class="active">Publications</a>
-      <a href="/talks/">Talks</a>
-      <a href="/awards/">Awards</a>
-      <a href="/teaching/">Teaching</a>
     </nav>
   </div>
 </header>
@@ -99,66 +95,38 @@
   <aside class="author">
     <!-- EDIT: profile photo. Put profile.jpg at the REPO ROOT (next to the top index.html). -->
     <div class="author__avatar">
-      <img src="/profile.jpg" alt="Your Name" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
+      <img src="/profile.jpg" alt="Young-ho Cho" onerror="this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;rect width=%22200%22 height=%22200%22 fill=%22%23e5e7eb%22/&gt;&lt;text x=%2250%25%22 y=%2252%25%22 font-size=%2216%22 fill=%22%239aa0a6%22 text-anchor=%22middle%22&gt;photo&lt;/text&gt;&lt;/svg&gt;'">
     </div>
     <!-- EDIT: name + short tagline -->
-    <div class="author__name">Your Name</div>
-    <p class="author__bio">Ph.D. Candidate. Brief one-line description of your research focus.</p>
+    <div class="author__name">Young-ho Cho</div>
+    <p class="author__bio">Ph.D. Candidate. Optimization-Aware AI Modeling for Power Systems.</p>
     <!-- EDIT: contact + link list -->
     <ul class="author__links">
       <li><span class="icon">&#128205;</span> Austin, TX</li>
       <li><span class="icon">&#127963;</span> The University of Texas at Austin</li>
-      <li><span class="icon">&#9993;</span> <a href="mailto:you@utexas.edu">Email</a></li>
-      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/">Google Scholar</a></li>
-      <li><span class="icon">&#128187;</span> <a href="https://github.com/">GitHub</a></li>
-      <li><span class="icon">in</span> <a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><span class="icon">&#9993;</span> <a href="mailto:jacobcho@utexas.edu">Email</a></li>
+      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/citations?hl=en&user=7Ai5gccAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></li>
+      <li><span class="icon">&#128187;</span> <a href="https://github.com/jacobcho0103">GitHub</a></li>
+      <li><span class="icon">in</span> <a href="https://www.linkedin.com/in/young-ho-cho-31673a237/">LinkedIn</a></li>
     </ul>
   </aside>
   <main class="content">
     <h1>Publications</h1>
-    <p>* denotes equal contribution. See also my <a href="https://scholar.google.com/">Google Scholar</a> profile.</p>
+    <p>You can find my full list of publications on <a href="https://scholar.google.com/citations?hl=en&amp;user=7Ai5gccAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">my Google Scholar profile</a>.</p>
 
-    <div class="year-head">2026</div>
-
-    <div class="entry">
-      <div class="title">Paper title goes here</div>
-      <div class="authors"><strong>Your Name</strong>, Coauthor Name, Advisor Name</div>
-      <div class="venue">Venue / Conference / Journal, 2026</div>
-      <div class="badges">
-        <a class="badge" href="#">PDF</a>
-        <a class="badge" href="#">Code</a>
-        <a class="badge" href="#">arXiv</a>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="title">Another paper title</div>
-      <div class="authors">Coauthor Name, <strong>Your Name</strong></div>
-      <div class="venue">Venue, 2026</div>
-      <div class="badges">
-        <a class="badge" href="#">PDF</a>
-      </div>
-    </div>
-
-    <div class="year-head">2025</div>
-
-    <div class="entry">
-      <div class="title">Earlier paper title</div>
-      <div class="authors"><strong>Your Name</strong>, Advisor Name</div>
-      <div class="venue">Venue, 2025</div>
-      <div class="badges">
-        <a class="badge" href="#">PDF</a>
-        <a class="badge" href="#">Code</a>
-      </div>
-    </div>
-
-    <!-- EDIT: copy an .entry block above to add more papers. Add a new .year-head per year. -->
+    <h2 class="selected-publications-heading">&#128196; Selected Publications</h2>
+    <ul class="selected-publications">
+      <li><strong>Y. Cho</strong>, M. Ko, and H. Zhu. <em>PGLib-CO2: A Power Grid Library for Real-Time Computation and Optimization of Carbon Emissions.</em> <strong>ACM e-Energy</strong>, 2026. (Best Paper Runner-Up Award)</li>
+      <li><strong>Y. Cho</strong>, M. Chehade, F. Al-Janahi, S. Lim, J. Mohammadi, and H. Zhu. <em>Carbon-aware Market Participation for Building Energy Management Systems.</em> <strong>IEEE Power &amp; Energy Society General Meeting</strong>, 2026.</li>
+      <li><strong>Y. Cho</strong>, H. Zhu, J. Im, D. Lee, and R. Baldick. <em>Wind Power Scenario Generation based on the Generalized Dynamic Factor Model and Generative Adversarial Network.</em> <strong>IEEE Transactions on Power Systems</strong>, 2025.</li>
+      <li><strong>Y. Cho</strong>, J. Chae, and D. Lee. <em>Similarity-Based Optimization Framework for Curtailment Service Providers Through Collaborative Filtering and Generalized Dynamic Factor Model.</em> <strong>IEEE Transactions on Smart Grid</strong>, 2022.</li>
+    </ul>
   </main>
 </div>
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    &copy; <span id="year"></span> Your Name. Hosted on GitHub Pages.
+    &copy; <span id="year"></span> Young-ho Cho. Hosted on GitHub Pages.
   </div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
